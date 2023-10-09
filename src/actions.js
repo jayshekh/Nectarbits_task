@@ -4,12 +4,3 @@ export const fetchMovies = {
     type: 'FETCH_MOVIES',
     // };
 };
-
-
-
-export const bookTicket = (movieId, numTickets) => {
-    return {
-        type: 'BOOK_TICKET',
-        payload: { movieId, numTickets },
-    };
-};

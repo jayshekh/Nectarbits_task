@@ -7,24 +7,10 @@ import MovieList from './component/movieList.js';
 
 
 function App() {
-  //const dispatch = useDispatch();
-
-  
-//  const ap = useEffect(() => {
-//     dispatch(fetchMovies());
-//   }, [dispatch]);
-
-  // const ap = dispatch => ({
-  //   startAction: () => dispatch(fetchMovies()),
-  // });
-
-  //console.log('ap'+ap)
-
   return (
 
       <div className="App">
         <MovieList />
-        <button src='/start'>start</button>
       </div>
   );
 }
