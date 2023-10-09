@@ -1,7 +1,7 @@
 // MovieDetail.js
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { bookTicket } from './actions'; // Define the bookTicket action
+import { bookTicket } from '../actions.js'; // Define the bookTicket action
 
 const MovieDetail = () => {
   const selectedMovie = useSelector((state) => state.selectedMovie);
@@ -14,7 +14,7 @@ const MovieDetail = () => {
   };
 
   return (
-    <div>
+    <div className=''>
       {selectedMovie && (
         <div>
           <h2>{selectedMovie.title}</h2>
@@ -24,7 +24,7 @@ const MovieDetail = () => {
           <img src={selectedMovie.poster} alt={selectedMovie.title} />
           <p>Available Seats: {selectedMovie.availableSeats}</p>
           <p>Ticket Price: ${selectedMovie.ticketPrice}</p>
-          <label>
+          <label className='textarea'>
             Number of Tickets:
             <input
               type="number"
