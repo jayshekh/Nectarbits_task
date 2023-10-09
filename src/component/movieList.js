@@ -53,8 +53,6 @@ const MovieList = () => {
                             <div>
                                 <h1>Seleted Movie Details</h1>
                             </div>
-
-                            <p class="text-right"><a href="#">See all</a></p>
                         </div>
                         <div class="content">
                             <div>
